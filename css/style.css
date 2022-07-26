@@ -1,0 +1,289 @@
+
+header{
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background: white;
+  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+  position: fixed;
+}
+
+
+.containerHeader{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+
+#logo img{
+  width: 6rem;
+  padding: 1rem 0;
+}
+
+#menu{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  list-style: none;
+  transition: 0.3s;
+}
+
+#menu a {
+  display: block;
+  padding: .5rem;
+  font-size: 1.8rem;
+  color: var(--color-black);
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+#menu a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #885F46;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+#menu a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/* ================= Home =================  */
+
+.containerHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.col-1{
+  width: 50%;
+  margin-left: 10%;
+
+}
+
+.col-1 h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.col-1 span{
+  color: #885F46;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+.col-1 p{
+  color: #885F46;
+  font-size: 1.6rem;
+
+}
+
+.btn-home button{
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: .5rem;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-home button:hover{
+  opacity: .8;
+  transition: 1s;
+}
+
+.btn-1{
+  background-color: #885F46;
+  color: var(--color-white);
+}
+
+
+.col-2{
+  width: 65rem;
+  padding-top: 8%;
+  
+}
+
+/* ================= Slide =================  */
+
+.slider{
+  width: 100%;
+  height: 80vh;
+  margin: 0 auto;
+  overflow: hidden;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%; 
+  position: relative;
+  
+}
+
+.slides{
+  width: 65rem;
+  height: 80vh;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;  
+  display: flex;
+
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  /* image  */
+  width: 100%;
+  transition: 2s;
+  
+}
+
+.slide img{
+  width: 65rem;
+}
+
+.manual-navigation{
+  position: absolute;
+  bottom: 4%;
+  width: 60rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.manual-btn{
+  border: 2px solid #885F46;
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.manual-btn:hover{
+  background-color: #885F46;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+} 
+
+#radio2:checked ~ .first{
+  margin-left: -100%;
+} 
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+} 
+
+.navigation-auto div{
+  border: 2px solid #885F46;
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.navigation-auto{
+  position: absolute;
+  bottom: 4%;
+  width: 60rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: #885F46;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: #885F46;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: #885F46;
+}
+
+
+/* ================= Novidades =================  */
+
+#novidades{
+  width: 100%;
+  background-color: #FFF7F7;
+  margin: 6rem 0;
+
+
+}
+
+.containerNovidades{
+  width: 90%;
+  margin: auto;
+  padding: 6rem 0;
+
+}
+
+.apresentacao{
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vestidos-novidades{
+  width: 80%;
+  height: 40rem;
+  
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.catalogo{
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.catalogo img{
+  margin: 1rem 2rem;
+  width: 20rem;
+  border-radius: .5rem;
+}
+
+.catalogo a{
+  text-decoration: none;
+}
+
+
+
+/* ================= Banner =================  */
+
+.banner{
+  width: 30%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.banner img{
+  width: 100%;
+  border-radius: .5rem;
+}
+
+
