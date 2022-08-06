@@ -1,0 +1,19 @@
+
+
+@media (max-width: 768px) {
+
+  .col-2{
+    display: none;
+  }
+
+  .image-novidades{
+    display: none;
+  }
+
+  .image-festas{
+    display: none;
+  }
+  .container-box{
+    display: none;
+  }
+}

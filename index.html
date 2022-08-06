@@ -4,17 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta nome ="autor" conteúdo ="SlikerTech">
-  <meta name ="description" content ="Portfólio da Empresa JulyAlves" >
-  <meta name ="keywords" content ="Alugueis de roupas, Vestidos, Festas, casamentos" >
+  <meta nome ="autor" conteúdo="SlikerTech">
+  <meta name ="description" content="Portfólio da Empresa JulyAlves">
+  <meta name ="keywords" content="Alugueis de roupas, Vestidos, Festas, casamentos">
   <title>July Alves</title>
-  <link rel ="icon" href ="assets/icon/icon-white.png">
+  <link rel ="icon" href="assets/icon/icon-white.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -25,12 +28,21 @@
         <img src="assets/icon/icon.png" alt="Logo-JulyAlves">
       </div>
 
-      <nav id="menu">
+      <button id="btn-mobile"></button>
+      <nav id="nav">
+        <div id="menu">
           <a href="#">Home</a>
           <a href="#novidades">Novidades</a>
           <a href="#categorias">Categorias</a>
-          <a href="#">Sobre</a>
-          <a href="#">Contato</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato">Contato</a>
+
+          <div class="redes-sociais-menu">
+            <img src="assets/redesSociais/instagram.png" alt="Instagram">
+            <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
+            <img src="assets/redesSociais/facebook.png" alt="Facebook">
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -47,6 +59,11 @@
           <div class="btn-home">
             <button class="btn-1">Catalogo</button>
             <button>Veja mais</button>
+          </div>
+          <div class="redes-sociais">
+            <img src="assets/redesSociais/instagram.png" alt="Instagram">
+            <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
+            <img src="assets/redesSociais/facebook.png" alt="facebook">
           </div>
         </div>
 
@@ -86,37 +103,110 @@
 
     <section id="novidades">
       <div class="containerNovidades">
-        <h1>Novidades</h1>
-
+       <div class="destaques">
+        <h2>Novidades</h2>
         <div class="apresentacao">
           <div class="vestidos-novidades">
-              
+              <img src="assets/image/Novidades/img01.jpg" alt="">
+              <img src="assets/image/Novidades/img04.jpg" alt="">
+              <img src="assets/image/Novidades/img03.jpg" alt="">
+             
           </div>
           <div class="image-novidades">
               <div class="catalogo">
-                <img src="assets/image/Novidades/Catalogo.png" alt="Catalogo">
-                <span>2022</span>
-                <a href="">Download catalogo</a>
+                <img src="assets/image/Novidades/Catalogo.png" alt="Catalogo">           
+                <a href="">Download</a>
               </div>
           </div>
         </div>
+       </div>
       </div>
     </section>
 
     <section id="categorias">
       <div class="container-categorias">
-         <h1>Vestidos de Festas</h1>
-         <h1>Vestidos de Noiva</h1>
-         <h1>Bolsas</h1>
-         <h1>Ternos</h1>
+          <div class="container-box">
+            <h2>Festas</h2>
+            <div class="image-festas">
+              <div class="card">
+                <img src="assets/image/Vestidos-festa/azul02.jpg" alt=""> 
+              </div>
+              <div class="card">
+                <img src="assets/image/Vestidos-festa/azul01.jpg" alt=""> 
+              </div>
+              <div class="card">
+                <img src="assets/image/Vestidos-festa/vermelho01.jpg" alt=""> 
+              </div>
+              <div class="card">
+                <img src="assets/image/Vestidos-festa/preto01.jpg" alt=""> 
+              </div>
+            </div>
+            <div class="grid-festa">
+              
+            </div>
+          </div>
+          <div class="container-box">
+            <h2>Noivas</h2>
+            
+            <div class="image-noivas">
+              <div class="card-noivas">
+                <img src="assets/image/Noivas/noiva01.jpg" alt="">
+              </div>
+              <div class="card-noivas">
+                <img src="assets/image/Noivas/noiva02.jpg" alt="">
+              </div>
+              <div class="card-noivas">
+                <img src="assets/image/Noivas/noiva03.jpg" alt="">
+              </div>
+              <div class="card-noivas">
+                <img src="assets/image/Noivas/noiva04.jpg" alt="">
+              </div> 
+            </div>
+          </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container-sobre">
+          <h2>Sobre nós</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores illum cumque maxime, 
+            inventore natus, recusandae excepturi distinctio nisi est laborum odit magni ipsum a doloremque 
+            porro reiciendis voluptatibus esse!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores illum cumque maxime, 
+            inventore natus, recusandae excepturi distinctio nisi est laborum odit magni ipsum a doloremque 
+            porro reiciendis voluptatibus esse!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores illum cumque maxime, 
+            inventore natus, recusandae excepturi distinctio nisi est laborum odit magni ipsum a doloremque 
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores illum cumque maxime, 
+            inventore natus, recusandae excepturi distinctio nisi est laborum odit magni ipsum a doloremqu
+          </p>
+
+          <span>Abraços, JulyAlves.</span>
+        </div>
+    </section>
+
+    <section id="contato">
+      <div class="container-contato">
+        <h1>Contato</h1>
       </div>
     </section>
 
-    <section class="banner">
-      <!-- <img src="assets/image/banner-vestidos.jpg" alt="Banner-1"> -->
-    </section>
+    <footer>
+      <div class="container-footer">
+        <div class="redes-sociais-footer">
+          <img src="assets/redesSociais/instagram.png" alt="Instagram">
+          <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
+          <img src="assets/redesSociais/facebook.png" alt="facebook">
+        </div>
+      </div>
+    </footer>
   </main>
 
   <script src="js/script.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

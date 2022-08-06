@@ -1,241 +1,27 @@
 
-header{
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  width: 100%;
-  background: white;
-  box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
-  position: fixed;
-}
-
-
-.containerHeader{
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  
-}
-
-#logo img{
-  width: 6rem;
-  padding: 1rem 0;
-}
-
-#menu{
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-
-  font-size: 1.8rem;
-  font-weight: bold;
-
-  list-style: none;
-  transition: 0.3s;
-}
-
-#menu a {
-  display: block;
-  padding: .5rem;
-  font-size: 1.8rem;
-  color: var(--color-black);
-  font-weight: bold;
-  text-decoration: none;
-
-}
-
-#menu a::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #885F46;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-#menu a:hover::after {
-  transform: scaleX(1);
-}
-
-
-/* ================= Home =================  */
-
-.containerHome {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: auto;
-  margin-bottom: 3rem;
-}
-
-.col-1{
-  width: 50%;
-  margin-left: 10%;
-
-}
-
-.col-1 h1 {
-  font-size: 6rem;
-  font-weight: bold;
-}
-
-.col-1 span{
-  color: #885F46;
-  font-size: 2.6rem;
-  font-weight: 700;
-}
-.col-1 p{
-  color: #885F46;
-  font-size: 1.6rem;
-
-}
-
-.btn-home button{
-  margin-top: 1rem;
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: .5rem;
-
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.btn-home button:hover{
-  opacity: .8;
-  transition: 1s;
-}
-
-.btn-1{
-  background-color: #885F46;
-  color: var(--color-white);
-}
-
-
-.col-2{
-  width: 65rem;
-  padding-top: 8%;
-  
-}
-
-/* ================= Slide =================  */
-
-.slider{
-  width: 100%;
-  height: 80vh;
-  margin: 0 auto;
-  overflow: hidden;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%; 
-  position: relative;
-  
-}
-
-.slides{
-  width: 65rem;
-  height: 80vh;
-  border-top-left-radius: 5%;
-  border-bottom-left-radius: 5%;  
-  display: flex;
-
-}
-
-.slides input{
-  display: none;
-}
-
-.slide{
-  /* image  */
-  width: 100%;
-  transition: 2s;
-  
-}
-
-.slide img{
-  width: 65rem;
-}
-
-.manual-navigation{
-  position: absolute;
-  bottom: 4%;
-  width: 60rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.manual-btn{
-  border: 2px solid #885F46;
-  padding: .5rem;
-  border-radius: .5rem;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.manual-btn:hover{
-  background-color: #885F46;
-}
-
-#radio1:checked ~ .first{
-  margin-left: 0;
-} 
-
-#radio2:checked ~ .first{
-  margin-left: -100%;
-} 
-
-#radio3:checked ~ .first {
-  margin-left: -200%;
-} 
-
-.navigation-auto div{
-  border: 2px solid #885F46;
-  padding: .5rem;
-  border-radius: .5rem;
-  cursor: pointer;
-  transition: .5s;
-}
-
-.navigation-auto{
-  position: absolute;
-  bottom: 4%;
-  width: 60rem;
-
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  cursor: pointer;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background-color: #885F46;
-}
-
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background-color: #885F46;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background-color: #885F46;
-}
-
-
 /* ================= Novidades =================  */
 
 #novidades{
   width: 100%;
-  background-color: #FFF7F7;
-  margin: 6rem 0;
-
-
+  height: 100vh;
+  margin-top: 2rem;
+  padding: 5rem 0;
 }
 
 .containerNovidades{
+  background-color: #FFF7F7;
+  padding: 4rem 0 ;
+}
+
+.destaques{
   width: 90%;
   margin: auto;
-  padding: 6rem 0;
+}
 
+.containerNovidades h2{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .apresentacao{
@@ -250,40 +36,181 @@ header{
   width: 80%;
   height: 40rem;
   
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
+  border-radius: .5rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.vestidos-novidades img{
+  width: 28rem;  
   border-radius: .5rem;
 }
 
+
+
 .catalogo{
-  width: 24rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 2rem;
+  border-radius: .5rem;
 }
 
 .catalogo img{
-  margin: 1rem 2rem;
-  width: 20rem;
+  margin: auto;
+  width: 18rem;
   border-radius: .5rem;
 }
 
 .catalogo a{
   text-decoration: none;
+  padding: 1rem 1rem;
+  background-color: #885F46;
+  color: var(--color-white);
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-radius: .5rem;
+  margin-top: 1rem;
+}
+
+.catalogo a:hover{
+  opacity: .8 ;
 }
 
 
+/* ================= Categorias =================  */
 
-/* ================= Banner =================  */
 
-.banner{
-  width: 30%;
+.container-categorias{
+  width: 90%;
   margin: auto;
-  margin-top: 2rem;
+  padding: 10rem 0;
+  text-align: center;
+
 }
 
-.banner img{
-  width: 100%;
+/* ================= Festas =================  */
+.container-box{
+  margin-bottom: 3rem;
+}
+.container-box h2{
+  margin-bottom: 4rem;
+}
+
+
+.image-festas{
+  max-width: 95%;
+  margin: auto;
+  display: flex;
+}
+
+.card{
+  display: flex;
+  height: 45rem;
+  width: 40rem;
+  background-color: #17141d;
+  border-radius: 1rem;
+  box-shadow: -.8rem .5rem 2rem #000;
+
+  transition: 1s ease-out;
+  position: relative;
+}
+
+.card img{
+  border-radius: 1rem;
+  height: 100%;
+  width: 40rem;
+}
+
+.card:not(:first-child) {
+  margin-left: -125px;
+  transition: 2s ease-out;
+  /* overflow-x: hidden; */
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 1s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 90px;
+  transition: 0.8s ease-out;
+}
+
+
+.grid-festa{
+  margin-top: 4rem;
+  height: 40rem;
+  border: 1px solid #ccc;
   border-radius: .5rem;
 }
 
 
+/* ================= Noivas =================  */
+
+.image-noivas{
+  width: 100%;
+  margin: auto;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+
+  padding: 1rem;
+}
+
+
+.card-noivas{
+  transition: 0.8s ease-out;
+  position: relative;
+}
+
+.card-noivas img{
+  width: 30rem;
+  height: 40rem;
+
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+}
+
+.card-noivas:hover {
+  transform: translateY(-20px);
+  transition: 1s ease-out;
+}
+
+/* ================= Sobre =================  */
+
+.container-sobre{
+  text-align: center;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  padding: 10rem 0; 
+}
+
+.container-sobre h2{
+  margin-bottom: 2rem;
+}
+.container-sobre p{
+  /* text-align: justify; */
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ================= Contato =================  */
+
+.container-contato{
+  text-align: center;
+  width: 70%;
+  height: 100vh;
+  margin: auto;
+  padding: 10rem 0; 
+}
