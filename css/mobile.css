@@ -2,10 +2,56 @@
 
 @media (max-width: 768px) {
 
-  .col-2{
-    display: none;
+  .containerHome{
+    
+    margin-top: 35%;
+    flex-direction: column;
+
   }
 
+  .col-1{
+    width: 75%;
+    margin: auto;
+    order: 1;
+  }
+
+  .redes-sociais{
+    padding-top: 1rem;
+  }
+  
+  .col-2{
+    order: 2;
+    
+    width: 100%;
+    margin: auto;
+    padding-top: 15%;
+  }
+
+  .slider{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .slider img{
+    width: 65rem;
+  }
+
+  .navigation-auto {
+    width: 100%;
+    align-items: center;
+  }
+
+  .manual-navigation{
+    width: 100%;
+    align-items: center;
+  }
+
+  .redes-sociais{
+    left: 2%;
+  }
+
+
+  
   .image-novidades{
     display: none;
   }
