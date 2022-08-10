@@ -2,6 +2,9 @@
 
 @media (max-width: 768px) {
 
+
+/* ================= Home =================  */
+
   .containerHome{
     
     margin-top: 35%;
@@ -50,16 +53,60 @@
     left: 2%;
   }
 
+/* ================= Novidade =================  */
 
-  
+  .containerNovidades{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .apresentacao{
+    width: 100%;
+  }
+
+  .vestidos-novidades{
+    width: 100%;
+  }
+
+  .vestidos-novidades img{
+    width: 100%;
+    height: 90vh;
+
+  }  
   .image-novidades{
     display: none;
   }
 
-  .image-festas{
-    display: none;
+/* ================= Categoria =================  */
+
+  .container-categorias{
+    width: 100%;
   }
-  .container-box{
-    display: none;
+  
+  .cards{
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    gap: 3rem;
+   
   }
+
+  .card{
+    margin-bottom: 3rem;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card:not(:first-child) {
+    margin-left: 0;
+  }
+
+  
+  .card:hover ~ .card {
+    left: 0px;
+  }
+
 }
