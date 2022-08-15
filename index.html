@@ -107,7 +107,12 @@
         <h2>Novidades</h2>
         <div class="apresentacao">
           <div class="vestidos-novidades">
-              <img src="assets/image/Novidades/img01.jpg" alt="">
+             <div class="box-novidades">
+              
+                <img src="assets/image/Novidades/img01.jpg" alt="">
+           
+              <span>Vestido one</span>
+             </div>
               <img src="assets/image/Novidades/img04.jpg" alt="">
               <img src="assets/image/Novidades/img03.jpg" alt="">
              
@@ -192,23 +197,48 @@
     </section>
 
     <section id="contato">
-      <div class="container-contato">
-        <h1>Contato</h1>
-      </div>
+      <h1>Contato</h1>
+        <div class="container-form">
+          <form class="form-contato" action="https://formsubmit.co/kevensantana40@gmail.com" method="POST">
+            <h2>Vamos lá?!</h2>
+            <span>Preencha o formulário abaixo para iniciar contato</span>
+            <div class="form-input">
+              <input type="text" name="name" placeholder="Nome:" required>
+              <input type="email" name="email" placeholder="Email:" required>
+              <input type="text" name="assunto" placeholder="Assunto:">
+              <textarea type="text" name="messagem" placeholder="Mensagem:"></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="#">
+
+              <button class="button-form" type="submit">Enviar</button>
+            </div>
+          </form>
+      
+        </div>
     </section>
 
     <footer>
       <div class="container-footer">
+        <div class="info-footer">
+          <h3>Conheça melhor nossas opções</h3>
+          <span>Endereço</span>
+        </div>
+
         <div class="redes-sociais-footer">
           <img src="assets/redesSociais/instagram.png" alt="Instagram">
           <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
           <img src="assets/redesSociais/facebook.png" alt="facebook">
         </div>
+
+      </div>
+      <div class="marca">
+        <p>&copy;Todos os direitos reservados, JulyAlves.  Produção: <a target="_blank" href="https://slikertech.github.io/-/">@SlikerTech</a></p>
       </div>
     </footer>
   </main>
 
   <script src="js/script.js"></script>
+  <script src="js/info.js"></script>
   <script src="js/menu.js"></script>
 </body>
 </html>

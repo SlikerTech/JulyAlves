@@ -109,4 +109,36 @@
     left: 0px;
   }
 
+
+
+
+  .card-noivas img{
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+  }
+
+
+
+
+  .container-sobre{
+    width: 85%;
+    padding-top: 10rem; 
+  }
+
+  .container-sobre p{
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  #contato {
+    width: 100%;
+    margin-top: 4rem;
+  }
+
+  .form-contato {
+    width: 85%;
+   }
+  
 }

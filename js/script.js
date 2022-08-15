@@ -16,3 +16,7 @@ function nextImage(){
   document.getElementById("radio"+count).checked = true;
 
 }
+
+function btn(){
+  alert("ok")
+}

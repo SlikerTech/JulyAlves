@@ -37,10 +37,38 @@ body{
 }
 
 
-footer{
+.container-footer{
   background-color: #885F46;
-  height: 30rem;
   width: 100%;
 
   padding: 2rem;
+}
+
+.info-footer{
+  margin-bottom: 1rem;
+  color: white;
+
+}
+
+
+.marca{
+  text-align: center;
+  padding: 1rem 0;
+  color: #ccc;
+  font-weight: bold;
+  background-color: #885F46;
+
+}
+
+
+.redes-sociais-footer img{
+  opacity: .9;
+  cursor: pointer;
+}
+
+
+.redes-sociais-footer img:hover{
+  opacity: 1;
+  transition: .4s;
+
 }

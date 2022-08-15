@@ -42,6 +42,15 @@
 .vestidos-novidades img{
   width: 28rem;  
   border-radius: .5rem;
+  cursor: pointer;
+}
+
+.box-novidades{
+  text-align: center;
+}
+
+.box-novidades button{
+  border: none;
 }
 
 
@@ -167,8 +176,7 @@
 
 .card-noivas img{
   width: 30rem;
-  min-height: 40rem;
-
+  height: 45rem;
   border: 1px solid #ccc;
   border-radius: .5rem;
 }
@@ -183,7 +191,6 @@
 .container-sobre{
   text-align: center;
   width: 70%;
-  height: 100vh;
   margin: auto;
   padding: 10rem 0; 
 }
@@ -201,10 +208,99 @@
 
 /* ================= Contato =================  */
 
-.container-contato{
-  text-align: center;
-  width: 70%;
-  height: 100vh;
+#contato {
+  width: 85%;
   margin: auto;
-  padding: 10rem 0; 
+  margin-top:1rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.container-form{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+
+.form-contato {
+ margin: left;
+ width: 70%;
+ border-radius: 1rem;
+ text-align: center;
+
+ margin-top: 3rem;
+ padding: 3rem 0;
+ color: var(--title);
+ border: 2px solid #885F46;
+}
+
+.form-contato h2 {
+ font-size: 3rem;
+ font-weight: 800;
+}
+
+.form-contato span {
+ font-size: 1.3rem;
+ color: var(--subTitle);
+ font-weight: bold;
+}
+
+.form-input {
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 80%;
+ margin: auto;
+ 
+ margin-top: 2.5rem;
+
+}
+
+.form-input input, textarea {
+ background-color: white;
+
+ color: var(--title);
+ font-size: 1.4rem;
+
+ height: 2rem;
+ margin-bottom: 2rem;
+ padding: 1.8rem 2rem;
+ border-radius: .5rem;
+ border: 1px solid #885F46;
+}
+
+.form-input textarea {
+ height: 12rem;
+ resize: none;
+ overflow-y: hidden;
+}
+
+
+.button-form {
+
+  margin: 0 auto;
+
+  width: 160px;
+  height: 40px;
+
+  background-color: #885F46;
+  color: white;
+  border-radius: 9px;
+  border: none;
+  
+  cursor: pointer;
+
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+
+  position: relative;
+
+  transition: 0.6s;
+}
+
+.button-form:hover {
+  opacity: .8;
 }
