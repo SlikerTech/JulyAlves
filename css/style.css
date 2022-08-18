@@ -1,84 +1,63 @@
+/* ================= Catalogo =================  */
 
-/* ================= Novidades =================  */
-
-#novidades{
-  width: 100%;
-  padding-top: 5rem;
-}
-
-.containerNovidades{
-  background-color: #FFF7F7;
-  padding: 4rem 0 ;
-}
-
-.destaques{
-  width: 90%;
-  margin: auto;
-}
-
-.containerNovidades h2{
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.apresentacao{
-  width: 95%;
-  margin: auto;
+#catalogo{
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-
-.vestidos-novidades{
-  width: 80%;  
-  border-radius: .5rem;
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  grid-gap: 10px;
-}
-
-.vestidos-novidades img{
-  width: 28rem;  
-  border-radius: .5rem;
-  cursor: pointer;
-}
-
-.box-novidades{
-  text-align: center;
-}
-
-.box-novidades button{
-  border: none;
-}
-
-
-
-.catalogo{
+  justify-content: center;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 2rem;
-  border-radius: .5rem;
+  padding-top: 3rem;
 }
 
-.catalogo img{
+
+.container-catalogo{
+  width: 80%;
   margin: auto;
-  width: 18rem;
+
+  border-radius: .5rem;
+  border: 1px solid #885F46;
+
+
+  padding: 3rem;
+  display: flex; 
+  text-align: center;
   border-radius: .5rem;
 }
 
-.catalogo a{
+.container-catalogo img{
+  width: 20rem; 
+  height: 30rem;
+  border-radius: .5rem;
+}
+
+.descricao-catalogo{
+  text-align: left;
+  padding: 1rem 3rem 0;
+}
+
+.descricao-catalogo h2{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #885F46;
+}
+
+.descricao-catalogo p{
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.btn-catalogo{
+  margin-top: 3rem;
+}
+
+.btn-catalogo a{
+  width: 100%;
   text-decoration: none;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1.5rem;
   background-color: #885F46;
   color: var(--color-white);
   font-size: 1.4rem;
   font-weight: bold;
-  border-radius: .5rem;
-  margin-top: 1rem;
+  border-radius: .5rem
 }
 
 .catalogo a:hover{
@@ -86,25 +65,108 @@
 }
 
 
+/* ================= Novidades =================  */
+
+
+.containerNovidades{
+  margin-top: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #FFF7F7;
+}
+
+
+.containerJuly,
+.containerMila {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 7rem;
+}
+
+.containerJuly h2,
+.containerMila h2{
+  margin-bottom: .5rem;
+}
+
+.cardsJuly,
+.cardsMila{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-gap: 5px;
+  margin: auto;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cardJuly,
+.cardMila {
+  width: 37rem;
+
+  border-radius: .5rem;
+
+  transition: 1s ease-out;
+  position: relative;
+  background-color: white;
+  box-shadow: -.3rem 1rem 1rem rgb(184, 184, 184);
+
+}
+
+.cardJuly img,
+.cardMila img{
+  /* box-shadow: -.1rem 0 1rem #000; */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  width: 100%;
+  height: 50rem;
+
+}
+.descricaoJuly,
+.descricaoMila {
+  padding-top: 1rem;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-radius: .5rem;
+}
+
+.descricaoJuly p,
+.descricaoMila  p{
+
+  font-size: 1.4rem;
+}
+
+
+hr{
+  width: 10%;
+  margin: auto;
+  margin-bottom: 2rem;
+  border-color: #885F46;
+}
+
+
 /* ================= Categorias =================  */
 
 
 .container-categorias{
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 10rem 0;
   text-align: center;
-
 }
 
 /* ================= Festas =================  */
-.container-box{
+.container-festas{
   margin-bottom: 3rem;
-  width: 100%;
+  width: 90%;
   margin: auto;
 
 }
-.container-box h2{
+.container-festas h2{
   margin-bottom: 4rem;
 }
 
@@ -114,7 +176,6 @@
 }
 
 .card{
-  display: flex;
   width: 25%;
   border-radius: .5rem;
   
@@ -124,7 +185,7 @@
 
 .card img{
   box-shadow: -.8rem .5rem 2rem #000;
-  border-radius: 1rem;
+  border-radius: .5rem;
   height: 100%;
   width: 40rem;
 }
@@ -157,34 +218,30 @@
 
 /* ================= Noivas =================  */
 
+
+.container-noivas h2{
+  margin-bottom: 2rem;
+}
+
 .image-noivas{
   width: 100%;
   margin: auto;
-  
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-gap: 30px;
 
   padding: 1rem;
 }
 
 
-.card-noivas{
-  transition: 0.8s ease-out;
-  position: relative;
-}
 
 .card-noivas img{
   width: 30rem;
-  height: 45rem;
+  height: 40rem;
   border: 1px solid #ccc;
   border-radius: .5rem;
 }
 
-.card-noivas:hover {
-  transform: translateY(-20px);
-  transition: 1s ease-out;
-}
 
 /* ================= Sobre =================  */
 

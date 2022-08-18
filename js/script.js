@@ -20,3 +20,5 @@ function nextImage(){
 function btn(){
   alert("ok")
 }
+
+

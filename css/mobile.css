@@ -7,7 +7,6 @@
 
   .containerHome{
     
-    margin-top: 35%;
     flex-direction: column;
 
   }
@@ -23,20 +22,7 @@
   }
   
   .col-2{
-    order: 2;
-    
-    width: 100%;
-    margin: auto;
-    padding-top: 15%;
-  }
-
-  .slider{
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .slider img{
-    width: 65rem;
+    display: none;
   }
 
   .navigation-auto {
@@ -50,32 +36,23 @@
   }
 
   .redes-sociais{
-    left: 2%;
+    flex-direction: row;
+    justify-content: left;
+    top: 90%;
+    left: 40%;
   }
+
+/* ================= Catalogo =================  */
+
+#catalogo{
+  padding-top: 20rem;
+  display: none;
+}
+
 
 /* ================= Novidade =================  */
 
-  .containerNovidades{
-    text-align: center;
-    margin-bottom: 2rem;
-  }
 
-  .apresentacao{
-    width: 100%;
-  }
-
-  .vestidos-novidades{
-    width: 100%;
-  }
-
-  .vestidos-novidades img{
-    width: 100%;
-    height: 90vh;
-
-  }  
-  .image-novidades{
-    display: none;
-  }
 
 /* ================= Categoria =================  */
 
@@ -109,16 +86,19 @@
     left: 0px;
   }
 
-
-
-
-  .card-noivas img{
-    width: 70%;
-    border: 1px solid #ccc;
-    border-radius: .5rem;
+/* ================= Noivas =================  */
+  .image-noivas{
+    width: 85%;
+    padding: 0;
   }
 
 
+  .card-noivas img{
+    width: 100%;
+    height: 60rem;
+    border: 1px solid #ccc;
+    border-radius: .5rem;
+  }
 
 
   .container-sobre{
@@ -131,6 +111,10 @@
     font-size: 1.8rem;
     line-height: 3rem;
   }
+
+
+/* ================= Contato =================  */
+
 
   #contato {
     width: 100%;
