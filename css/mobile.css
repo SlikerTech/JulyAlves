@@ -8,18 +8,26 @@
   .containerHome{
     
     flex-direction: column;
-
+    justify-content: center;
+    align-items: center;
   }
 
+  .btn-home button{
+    margin: 0;
+  }
   .col-1{
-    width: 75%;
+    width: 80%;
     margin: auto;
-    order: 1;
+
+    text-align: center;
   }
 
-  .redes-sociais{
-    padding-top: 1rem;
+  .col-1 span{
+    color: #885F46;
+    font-size: 2.2rem;
+    font-weight: 700;
   }
+
   
   .col-2{
     display: none;
@@ -37,11 +45,16 @@
 
   .redes-sociais{
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+    align-items: end;
     top: 90%;
-    left: 40%;
+    position: relative;
+
   }
 
+  .redes-sociais-menu{
+    display: block;
+  }
 /* ================= Catalogo =================  */
 
 #catalogo{
@@ -52,7 +65,19 @@
 
 /* ================= Novidade =================  */
 
+.containerJuly,
+.containerMila {
+  width: 100%;
+}
 
+.cardsJuly,
+.cardsMila{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
 
 /* ================= Categoria =================  */
 
