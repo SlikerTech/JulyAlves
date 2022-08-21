@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="css/button.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
@@ -37,23 +38,23 @@
           <a href="#sobre">Sobre</a>
           <a href="#contato">Contato</a>
 
-          <div class="btn-home">
-            <button class="btn-1">Catalogo</button>
-          </div>
-
           <div class="redes-sociais-menu">
-            <img src="assets/redesSociais/instagram.png" alt="Instagram">
-            <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
-            <img src="assets/redesSociais/facebook.png" alt="Facebook">
+            <a target="_blank" href="https://www.instagram.com/julyalvesatelie/">
+              <img src="assets/redesSociais/instagram.png" alt="Instagram">
+            </a>
+            <a target="_blank" href="https://wa.me/5575992128799?text=Olá JulyAlves, vim pelo seu site.">
+              <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
+            </a>
+            <a target="_blank" href="#">
+              <img src="assets/redesSociais/facebook.png" alt="Facebook">
+            </a>
           </div>
 
         </div>
       </nav>
     </div>
-  </header>
 
-  <main>
-    <section class="home">
+    <div class="home">
       <div class="containerHome">
         <div class="col-1">
           <div class="descricao">
@@ -62,13 +63,20 @@
             <p>Não é apenas uma roupa, e sim a realização de um sonho!</p>
           </div>
           <div class="btn-home">
-            <button class="btn-1">Catalogo</button>
-            <button>Veja mais</button>
+            <a href="#catalogo" class="btn-1">Catalogo</a>
+            <a href="#categorias" class="btn-2">Veja mais</a>
           </div>
           <div class="redes-sociais">
-            <img src="assets/redesSociais/instagram.png" alt="Instagram">
-            <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
-            <img src="assets/redesSociais/facebook.png" alt="facebook">
+            <a target="_blank" href="https://wa.me/5575992128799?text=Olá JulyAlves, vim pelo seu site. ">
+              <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
+            </a>
+            <a target="_blank" href="https://www.instagram.com/julyalvesatelie/">
+              <img src="assets/redesSociais/instagram.png" alt="Instagram">
+            </a>
+            
+            <a target="_blank" href="#">
+              <img src="assets/redesSociais/facebook.png" alt="Facebook">
+            </a>
           </div>
         </div>
 
@@ -104,8 +112,10 @@
             </div>
         </div>
 
-    </section>
+      </div>
+  </header>
 
+  <main>
     <section id="catalogo">
       <div class="container-catalogo">
         <img src="assets/image/Novidades/Catalogo.png" alt="Catalogo">           
@@ -119,12 +129,13 @@
             Ipsa, at doloribus molestiae officia quas ab excepturi itaque porro.
           </p>
           <div class="btn-catalogo">
-            <a href="">Ver Catalogo</a>
-            <a href="">Download</a>
+            <a target="_blank" href="assets/doc/Catalogo.pdf">Ver Catalogo</a>
+            <a href="assets/doc/Catalogo.pdf" download="CatalogoJulyAlves">Download</a>
           </div>
         </div>
       </div>
     </section>
+
     <section id="novidades">
       <div class="containerNovidades">
         <div class="containerJuly">
@@ -163,7 +174,8 @@
     <section id="categorias">
       <div class="container-categorias">
           <div class="container-festas">
-            <h2>Festas</h2>
+            <h2>Vestidos Festas</h2>
+            <hr>
             <div class="image-festas">
               <div class="cards">
                 <div class="card">
@@ -180,20 +192,22 @@
                 </div>
               </div>
             </div>
-            <div class="grid-festa">
-              
+            <div class="grid-festa"> 
+              <button>Ver Mais</button>
             </div>
           </div>
-          <div class="container-noivas">
-            <h2>Noivas</h2>
-            
-            <div class="image-noivas">
-              <div class="card-noivas">
+          <div class="containerNoivas">
+             <h2>Vestidos Noivas</h2>
+            <hr>
+            <div class="cardsNoivas">
+              <div class="cardNoiva">
                 <img src="assets/image/Noivas/noiva01.jpg" alt="">
-                <img src="assets/image/Noivas/noiva02.jpg" alt="">
-                <img src="assets/image/Noivas/noiva03.jpg" alt="">
-                <img src="assets/image/Noivas/noiva04.jpg" alt="">
-              </div> 
+                <div class="descricaoJuly">
+                  <h3 id="titulo"></h3>
+                  <span id="descricao">Vestido papa</span><br>
+                  <strong id="tamanho">tamanho </strong> 
+                </div>
+              </div>
             </div>
           </div>
     </section>
@@ -243,25 +257,44 @@
         </div>
     </section>
 
-    <footer>
-      <div class="container-footer">
-        <div class="info-footer">
-          <h3>Conheça melhor nossas opções</h3>
-          <span>Avenida Viana Bandeira</span>
-        </div>
-
-        <div class="redes-sociais-footer">
-          <img src="assets/redesSociais/instagram.png" alt="Instagram">
-          <img src="assets/redesSociais/whatsapp.png" alt="whatsapp">
-          <img src="assets/redesSociais/facebook.png" alt="facebook">
-        </div>
-
-      </div>
-      <div class="marca">
-        <p>&copy;Todos os direitos reservados, JulyAlves.  Produção: <a target="_blank" href="https://slikertech.github.io/-/">@SlikerTech</a></p>
-      </div>
-    </footer>
   </main>
+  <footer>
+    <div class="container-footer">
+      <div class="redes-sociais-footer">
+        <a target="_blank" href="https://www.instagram.com/julyalvesatelie/">
+          <img src="assets/redesSociais/instagram.png" alt="Instagram">
+        </a>
+        <a target="_blank" href="https://wa.me/5575992128799?text=Olá JulyAlves, vim pelo seu site.">
+          <img src="assets/redesSociais/whatsapp.png" alt="Whatsapp">
+        </a>
+        <a target="_blank" href="#">
+          <img src="assets/redesSociais/facebook.png" alt="Facebook">
+        </a>
+      </div>
+      <div class="info-footer">
+        <h3>Conheça nossas loja</h3>
+        <div>
+          <span>Avenida Viana Bandeira, 105.</span><br>
+          <span>Santo Amaro, Bahia, Brasil</span><br>
+          <span>CEP: 44200-000</span>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="marca">
+      <p>&copy;Todos os direitos reservados, 
+        <a target="_blank" href="https://slikertech.github.io/-/">@JulyAlves.</a>
+        Produção: <a target="_blank" href="https://slikertech.github.io/-/">@SlikerTech</a>
+      </p>
+    </div>
+  </footer>
+
+  <div class="whats">
+    <a target="_blank" href="https://wa.me/5575992128799?text=Olá JulyAlves, vim pelo seu site.">
+     <img src="assets/icon/whatsapp.png" width="50" alt="Fale conosco pelo whatsapp" title="Fale conosco pelo whatsapp">
+    </a>
+  </div>
 
   <script src="js/script.js"></script>
   <script src="js/info.js"></script>

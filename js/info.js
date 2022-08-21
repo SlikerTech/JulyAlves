@@ -75,3 +75,42 @@ VestidosMila.map(vestidoMila => {
 });
 
 cardMila.remove();
+
+
+// =====================
+
+const CardsNoivas = document.querySelector("div.cardsNoivas");
+const CardNoiva = document.querySelector("div.cardNoiva");
+
+const VestidosCasamento = [
+  {
+    img: "assets/image/Noivas/noiva01.jpg",
+    titulo: "Vestido Noiva",
+    descricao: "Branco",
+    tamanho: "M/G"
+  },
+  {
+    img: "assets/image/Noivas/noiva02.jpg",
+    titulo: "Vestido Noiva Bia",
+    descricao: "Pérola, com calda ",
+    tamanho: "M/G"
+  },
+  
+  {
+    img: "assets/image/Noivas/noiva04.jpg",
+    titulo: "Vestido Noiva Malu",
+    descricao: "Branco neve, com cinto trançado",
+    tamanho: "G/GG"
+  },
+];
+
+VestidosCasamento.map(vestidosCasamento => {
+  const slideClone = CardNoiva.cloneNode(true);
+  slideClone.querySelector("img").src = vestidosCasamento.img;
+  slideClone.querySelector("#titulo").innerHTML = vestidosCasamento.titulo;
+  slideClone.querySelector("#descricao").innerHTML = vestidosCasamento.descricao;
+  slideClone.querySelector("#tamanho").innerHTML = vestidosCasamento.tamanho;
+  CardsNoivas.appendChild(slideClone);
+});
+
+CardNoiva.remove();

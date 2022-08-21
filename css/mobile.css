@@ -2,8 +2,16 @@
 
 @media (max-width: 768px) {
 
+/* ================= Header =================  */
+
+.containerHeader{
+
+  padding: 1rem 3rem;
+  position: fixed;
+}
 
 /* ================= Home =================  */
+
 
   .containerHome{
     
@@ -12,8 +20,9 @@
     align-items: center;
   }
 
-  .btn-home button{
+  .btn-home a{
     margin: 0;
+    padding: 1rem 2rem;
   }
   .col-1{
     width: 80%;
@@ -28,7 +37,6 @@
     font-weight: 700;
   }
 
-  
   .col-2{
     display: none;
   }
@@ -46,32 +54,76 @@
   .redes-sociais{
     flex-direction: row;
     justify-content: center;
-    align-items: end;
-    top: 90%;
+    align-items: center;
     position: relative;
-
+    top: 95%;
   }
 
   .redes-sociais-menu{
-    display: block;
+    display: flex;
+    align-items: center;
+
   }
 /* ================= Catalogo =================  */
 
-#catalogo{
-  padding-top: 20rem;
+.container-catalogo{
+  margin-top: 6rem;
+  width: 90%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.container-catalogo img{
+  width: 30rem;
+  height: 45rem;
+}
+
+.descricao-catalogo{
+  text-align: center;
+  padding: 0;
+}
+
+.descricao-catalogo h2{
+  margin-top: .5rem;
+  font-size: 2.4rem;
+  text-align: center;
+
+}
+
+.descricao-catalogo p{
   display: none;
+}
+
+.btn-catalogo{
+  margin-top: 2rem;
 }
 
 
 /* ================= Novidade =================  */
 
-.containerJuly,
-.containerMila {
+.containerNovidades{
   width: 100%;
+  margin: auto;
+}
+
+.containerJuly,
+.containerMila,
+.containerNoivas {
+  width: 90%;
+  margin: auto;
+}
+
+.containerJuly{
+  margin-bottom: 4rem;
+
 }
 
 .cardsJuly,
-.cardsMila{
+.cardsMila,
+.cardsNoivas{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,10 +131,22 @@
   gap: 3rem;
 }
 
+.cardJuly img,
+.cardMila img,
+.cardNoiva img{
+  /* box-shadow: -.1rem 0 1rem #000; */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  width: 100%;
+  height: 50rem;
+
+}
+
 /* ================= Categoria =================  */
 
   .container-categorias{
-    width: 100%;
+    width: 95%;
+    margin: auto;
   }
   
   .cards{
@@ -111,24 +175,10 @@
     left: 0px;
   }
 
-/* ================= Noivas =================  */
-  .image-noivas{
-    width: 85%;
-    padding: 0;
-  }
-
-
-  .card-noivas img{
-    width: 100%;
-    height: 60rem;
-    border: 1px solid #ccc;
-    border-radius: .5rem;
-  }
-
+/* ================= Sobre =================  */
 
   .container-sobre{
     width: 85%;
-    padding-top: 10rem; 
   }
 
   .container-sobre p{
@@ -143,11 +193,36 @@
 
   #contato {
     width: 100%;
-    margin-top: 4rem;
   }
 
   .form-contato {
     width: 85%;
    }
   
+
+/* ================= Footer =================  */
+
+   .info-footer{
+    margin-left: 3rem;
+    margin-bottom: 0;
+   }
+
+   .info-footer h3{
+    font-size: 1.6rem;
+   }
+
+   .info-footer span{
+    font-size: 1.2rem;
+   }
+
+  .marca p{
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+
+  .redes-sociais-footer img{
+    width: 2rem;
+  }
+
+
 }

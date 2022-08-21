@@ -1,26 +1,15 @@
 /* ================= Catalogo =================  */
-
-#catalogo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-top: 3rem;
-}
-
-
 .container-catalogo{
-  width: 80%;
+  width: 70%;
   margin: auto;
 
   border-radius: .5rem;
   border: 1px solid #885F46;
 
 
-  padding: 3rem;
+  padding: 2rem;
   display: flex; 
   text-align: center;
-  border-radius: .5rem;
 }
 
 .container-catalogo img{
@@ -35,13 +24,13 @@
 }
 
 .descricao-catalogo h2{
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #885F46;
 }
 
 .descricao-catalogo p{
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 3rem;
 }
 
@@ -52,35 +41,31 @@
 .btn-catalogo a{
   width: 100%;
   text-decoration: none;
-  padding: 1.5rem 1.5rem;
+  padding: 1rem 1.5rem;
   background-color: #885F46;
-  color: var(--color-white);
-  font-size: 1.4rem;
+  color: white;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: .5rem
 }
 
-.catalogo a:hover{
-  opacity: .8 ;
+.btn-catalogo a:hover{
+  opacity: .9 ;
 }
 
 
 /* ================= Novidades =================  */
-
-
 .containerNovidades{
-  margin-top: 4rem;
-  padding-top: 5rem;
-  padding-bottom: 2rem;
   width: 100%;
-  height: 100%;
   text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   background-color: #FFF7F7;
 }
 
 
 .containerJuly,
-.containerMila {
+.containerMila{
   width: 90%;
   margin: auto;
   margin-bottom: 7rem;
@@ -92,35 +77,40 @@
 }
 
 .cardsJuly,
-.cardsMila{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-gap: 5px;
+.cardsMila,
+.cardsNoivas{
+  display: flex;
+  gap: 2rem;
   margin: auto;
-
   justify-content: center;
   align-items: center;
 }
 
-.cardJuly,
-.cardMila {
-  width: 37rem;
+.cardJuly:hover,
+.cardMila:hover,
+.cardNoiva:hover{
+  transform: translateY(-20px);
+  transition: 1s ease-out;
+}
 
+.cardJuly,
+.cardMila,
+.cardNoiva {
   border-radius: .5rem;
 
   transition: 1s ease-out;
-  position: relative;
   background-color: white;
   box-shadow: -.3rem 1rem 1rem rgb(184, 184, 184);
 
 }
 
 .cardJuly img,
-.cardMila img{
+.cardMila img,
+.cardNoiva img{
   /* box-shadow: -.1rem 0 1rem #000; */
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
-  width: 100%;
+  width: 37rem;
   height: 50rem;
 
 }
@@ -136,7 +126,6 @@
 
 .descricaoJuly p,
 .descricaoMila  p{
-
   font-size: 1.4rem;
 }
 
@@ -144,32 +133,24 @@
 hr{
   width: 10%;
   margin: auto;
-  margin-bottom: 2rem;
+  margin-top: .3rem;
+  margin-bottom: 2.5rem;
   border-color: #885F46;
 }
-
-
 /* ================= Categorias =================  */
 
 
 .container-categorias{
   width: 100%;
-  margin: auto;
-  padding: 10rem 0;
   text-align: center;
 }
 
 /* ================= Festas =================  */
 .container-festas{
-  margin-bottom: 3rem;
-  width: 90%;
+  width: 95%;
   margin: auto;
-
+  overflow: hidden;
 }
-.container-festas h2{
-  margin-bottom: 4rem;
-}
-
 
 .cards{
   display: flex;
@@ -180,25 +161,24 @@ hr{
   border-radius: .5rem;
   
   transition: 1s ease-out;
-  position: relative;
+  /* position: relative; */
 }
 
 .card img{
-  box-shadow: -.8rem .5rem 2rem #000;
+  box-shadow: -.8rem .1rem 1rem #000;
   border-radius: .5rem;
-  height: 100%;
   width: 40rem;
+  height: 50rem;
 }
 
 .card:not(:first-child) {
   margin-left: -30px;
-  transition: 2s ease-out;
-  /* overflow-x: hidden; */
+  transition: 3s ease-out;
 }
 
 .card:hover {
   transform: translateY(-20px);
-  transition: 1s ease-out;
+  transition: 2s ease-out;
 }
 
 .card:hover ~ .card {
@@ -208,27 +188,21 @@ hr{
 }
 
 
-.grid-festa{
-  margin: 4rem 0; 
-  height: 40rem;
-  border: 1px solid #ccc;
-  border-radius: .5rem;
-}
-
 
 /* ================= Noivas =================  */
 
+.containerNoivas h2{
+  margin-top: 5rem;
 
-.container-noivas h2{
-  margin-bottom: 2rem;
 }
 
 .image-noivas{
   width: 100%;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  grid-gap: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   padding: 1rem;
 }
@@ -249,7 +223,7 @@ hr{
   text-align: center;
   width: 70%;
   margin: auto;
-  padding: 10rem 0; 
+  padding: 2rem 0; 
 }
 
 .container-sobre h2{
@@ -268,7 +242,6 @@ hr{
 #contato {
   width: 85%;
   margin: auto;
-  margin-top:1rem;
   margin-bottom: 5rem;
   text-align: center;
 }

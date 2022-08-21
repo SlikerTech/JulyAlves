@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 :root {
 
   font-size: 62.5%;
@@ -36,39 +35,19 @@ body{
   overflow: overlay;
 }
 
-
-.container-footer{
-  background-color: #885F46;
-  width: 100%;
-
-  padding: 2rem;
+section{
+  padding-top: 9rem;
 }
 
-.info-footer{
-  margin-bottom: 1rem;
-  color: white;
+.whats{
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  z-index: 5;
 
+  opacity: .5;
 }
 
-
-.marca{
-  text-align: center;
-  padding: 1rem 0;
-  color: #ccc;
-  font-weight: bold;
-  background-color: #885F46;
-
-}
-
-
-.redes-sociais-footer img{
-  opacity: .9;
-  cursor: pointer;
-}
-
-
-.redes-sociais-footer img:hover{
+.whats:hover{
   opacity: 1;
-  transition: .4s;
-
 }
