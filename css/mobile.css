@@ -6,7 +6,7 @@
 
 .containerHeader{
 
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   position: fixed;
 }
 
@@ -52,11 +52,15 @@
   }
 
   .redes-sociais{
+    position: inherit;
+
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    position: relative;
-    top: 95%;
+    gap: 1rem;
+
+    margin-top: 2rem;
+
   }
 
   .redes-sociais-menu{
