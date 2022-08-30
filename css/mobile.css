@@ -127,20 +127,21 @@
 
 }
 
-.cardJuly,
-.cardMila,
-.cardNoiva {
-  width: 40rem;
-}
-
 .cardsJuly,
 .cardsMila,
 .cardsNoivas{
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
+}
+
+.cardJuly,
+.cardMila,
+.cardNoiva {
+  width: 40rem;
 }
 
 .cardJuly img,
