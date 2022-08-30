@@ -109,20 +109,28 @@
 /* ================= Novidade =================  */
 
 .containerNovidades{
-  width: 100%;
+  width: 90%;
   margin: auto;
 }
+
+
 
 .containerJuly,
 .containerMila,
 .containerNoivas {
-  width: 95%;
+  width: 90%;
   margin: auto;
 }
 
 .containerJuly{
   margin-bottom: 4rem;
 
+}
+
+.cardJuly,
+.cardMila,
+.cardNoiva {
+  width: 40rem;
 }
 
 .cardsJuly,
@@ -138,9 +146,9 @@
 .cardJuly img,
 .cardMila img,
 .cardNoiva img { 
-  width: 40rem;
+  width: 100%;
   height: 50rem;
-  
+
   /* box-shadow: -.1rem 0 1rem #000; */
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
@@ -150,7 +158,7 @@
 /* ================= Categoria =================  */
 
   .container-categorias{
-    width: 95%;
+    width: 90%;
     margin: auto;
   }
   
